@@ -1,0 +1,22 @@
+{{ $aos := resources.Get "js/aos.js" }}
+{{ $scripts := resources.Get "js/scripts.js" }}
+{{ $bootstrap := resources.GetRemote "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" }}
+
+<!DOCTYPE html>
+<html lang="{{ site.Language }}">
+    {{- partial "head.html" . }}
+    <body id="page-top">
+        {{- partial "navigation.html" . }}
+
+        {{- block "main" . }}{{- end }}
+        
+        {{- partial "footer.html" . }}
+
+        <script src="{{ $aos.Permalink }}"></script>
+        <script src="{{ $scripts.Permalink }}"></script>
+        <script src="{{ $bootstrap.Permalink }}"></script>
+        <script>
+            AOS.init({ duration: 1000, delay: 500 });
+        </script>
+    </body>
+</html>

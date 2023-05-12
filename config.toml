@@ -1,0 +1,5 @@
+baseURL = 'https://gawebukusijitil.web.id/'
+languageCode = 'en-us'
+title = 'Gawebukusijitil - Cetak Buku Satuan'
+[params]
+	companyName = 'Gawebukusijitil'
