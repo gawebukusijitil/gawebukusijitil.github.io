@@ -4,8 +4,8 @@ date: 2023-02-26T05:26:27+07:00
 layout: index
 
 masthead_section:
-    headline: Cetak satu eksemplar dengan mudah.
-    subheadline: "Siapa bilang cetak buku harus partai besar atau hasilnya seperti fotokopi?"
+    headline: Cetak satu eksemplar dengan mudah!
+    subheadline: Siapa bilang cetak buku harus partai besar atau hasilnya seperti fotokopi?
     cta: Buktikan kami
 
 quote_section:
@@ -24,7 +24,7 @@ features_section:
     feat_2_desc: Teknologi yang kami gunakan tidak mengorbankan kualitas untuk mempercepat proses percetakan kami
 
     feat_3: Terjangkau
-    feat_3_desc: Karena kami percaya kenyamanan membaca dan biaya yang mahal tidak selamanya sepadan
+    feat_3_desc: Karena kami percaya kenyamanan membaca dan biaya yang mahal tidak selamanya linear
 
     feat_4: Terpercaya
     feat_4_desc: Percetakan kami dipercaya oleh penerbit-penerbit besar untuk mencetak buku-buku terbitan mereka
@@ -33,5 +33,5 @@ cta_section:
     line_1: Cetak bukumu
     line_2: sekarang
     cta_text: Chat melalui WhatsApp
-    cta_link: ""
+    cta_link: https://api.whatsapp.com/send/?phone=6282242866661&text=Halo,+gawebukusijitil.+Aku+mau+cetak+buku.
 ---
