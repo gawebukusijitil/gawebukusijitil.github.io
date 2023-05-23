@@ -1,3 +1,5 @@
+{{ $img := resources.Get "img/bg_buku.webp" }}
+
 <!-- Masthead header-->
 <header class="masthead" id="home">
     <div class="container p-5">
@@ -13,6 +15,8 @@
             <div class="col-lg-6" data-aos="fade-left">
                 <!-- Masthead device mockup feature-->
                 <div class="masthead-device-mockup">
+                    <img class="img-fluid rounded-circle" src="{{ $img.Permalink }}" alt="..." />
+                    <!--
                     <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                         <defs>
                         <linearGradient id="circleGradient" gradientTransform="rotate(45)">
@@ -20,7 +24,7 @@
                         <stop class="gradient-end-color" offset="100%"></stop>
                         </linearGradient>
                         </defs>
-                        <circle cx="50" cy="50" r="50"></circle></svg>
+                        <circle cx="50" cy="50" r="50"></circle></svg> -->
                     <svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
                         <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
                         <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect></svg>
