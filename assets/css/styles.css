@@ -12038,6 +12038,8 @@ section {
   position: absolute;
   background-size: cover;
   pointer-events: auto;
+  border-radius: 1.3em;
+  overflow: hidden;  
 }
 
 .device .button {
@@ -12058,7 +12060,6 @@ section {
 
 .device[data-device=iPhoneX][data-orientation=portrait][data-color=black]::after {
   content: "";
-  background-image: url("../assets/img/portrait_black.png");
 }
 
 .device[data-device=iPhoneX][data-orientation=portrait][data-color=black] .button {
@@ -12205,24 +12206,24 @@ footer a:hover, footer a:active, footer a:focus {
   padding-top: 9.5rem;
   padding-bottom: 5rem;
 }
-.masthead .masthead-device-mockup {
+.masthead-device-mockup {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
-.masthead .masthead-device-mockup .circle {
+.masthead-device-mockup .circle {
   fill: url(#circleGradient);
   width: 70%;
   display: none;
 }
-.masthead .masthead-device-mockup .circle .gradient-start-color {
+.masthead-device-mockup .circle .gradient-start-color {
   stop-color: #FF5F6D;
 }
-.masthead .masthead-device-mockup .circle .gradient-end-color {
+.masthead-device-mockup .circle .gradient-end-color {
   stop-color: #FFC371;
 }
-.masthead .masthead-device-mockup .shape-1 {
+.masthead-device-mockup .shape-1 {
   position: absolute;
   height: 1rem;
   width: 1rem;
@@ -12231,7 +12232,7 @@ footer a:hover, footer a:active, footer a:focus {
   bottom: 15%;
   left: 10%;
 }
-.masthead .masthead-device-mockup .shape-2 {
+.masthead-device-mockup .shape-2 {
   position: absolute;
   height: 0.75rem;
   width: 0.75rem;
@@ -12239,47 +12240,79 @@ footer a:hover, footer a:active, footer a:focus {
   top: 15%;
   right: 10%;
 }
-.masthead .masthead-device-mockup .device-wrapper {
+.masthead-device-mockup .device-wrapper {
   max-width: 10rem;
 }
 @media (min-width: 576px) {
-  .masthead .masthead-device-mockup .circle {
+  .masthead-device-mockup .circle {
     width: 70%;
     display: block;
   }
-  .masthead .masthead-device-mockup .device-wrapper {
+  .masthead-device-mockup .device-wrapper {
     max-width: 12.5rem;
   }
 }
 @media (min-width: 768px) {
-  .masthead .masthead-device-mockup .circle {
+  .masthead-device-mockup .circle {
     width: 60%;
   }
-  .masthead .masthead-device-mockup .device-wrapper {
+  .masthead-device-mockup .device-wrapper {
     max-width: 15rem;
   }
 }
 @media (min-width: 992px) {
-  .masthead .masthead-device-mockup .circle {
+  .masthead-device-mockup .circle {
     width: 90%;
   }
-  .masthead .masthead-device-mockup .device-wrapper {
+  .masthead-device-mockup .device-wrapper {
     max-width: 15rem;
   }
 }
 @media (min-width: 1200px) {
-  .masthead .masthead-device-mockup .circle {
+  .masthead-device-mockup .circle {
     width: 75%;
   }
-  .masthead .masthead-device-mockup .device-wrapper {
+  .masthead-device-mockup .device-wrapper {
     max-width: 15rem;
   }
 }
 @media (min-width: 1400px) {
-  .masthead .masthead-device-mockup .circle {
+  .masthead-device-mockup .circle {
     width: 70%;
   }
-  .masthead .masthead-device-mockup .device-wrapper {
+  .masthead-device-mockup .device-wrapper {
     max-width: 17rem;
   }
 }
+.slider { width: 100%; height: 100%; padding-bottom: 25%;  }
+.slider img { width: 100%;  }
+.slide-wrapper { width: 100%; height: 100%; margin: 0; }
+@media only screen and (min-width: 1024px) {
+  /*.slide-wrapper { width: 1024px; margin: auto;  }*/
+}
+.slide-wrapper .prev-button,
+.slide-wrapper .next-button {
+  height: 100%;
+  width: 25%;
+  position: absolute;
+}
+
+.slide-wrapper svg:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.slide-wrapper .next-button {
+  top: 0;
+  right: 0;
+}
+.slide-wrapper svg {
+  fill: rgba(255, 255, 255, 0.5);
+  background-color: #000000;
+  border-radius: 50%;
+  opacity: 0.5;
+  z-index: 10;
+  position: relative;
+  top: 45%;
+  left: 15%;
+}
+
+.slide-wrapper .prev-button svg { transform: rotate(180deg); }

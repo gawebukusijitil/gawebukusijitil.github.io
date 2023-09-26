@@ -15,14 +15,19 @@
         <script src="{{ $aos.Permalink }}"></script>
         <script src="{{ $scripts.Permalink }}"></script>
         <script src="{{ $bootstrap.Permalink }}"></script>
+        <script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
+
         <script>
             AOS.init({ duration: 1000, delay: 500 });
-            function calculator() {
-                return {
-                    size: "",
-                    paper_weight: "",
-                }
-            }
+            var slider = simpleslider.getSlider({
+                container: document.getElementById('myslider'),
+                prop: 'opacity',
+                delay: 7,
+                init: -100,
+                show: 0,
+                end: 100,
+                unit: '%'
+            });
         </script>
     </body>
 </html>
