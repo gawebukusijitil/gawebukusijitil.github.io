@@ -12312,7 +12312,7 @@ footer a:hover, footer a:active, footer a:focus {
   z-index: 10;
   position: relative;
   top: 45%;
-  left: 15%;
 }
 
-.slide-wrapper .prev-button svg { transform: rotate(180deg); }
+.slide-wrapper .prev-button svg { left: 15%; transform: rotate(180deg); }
+.slide-wrapper .next-button svg { right: -15%; }
