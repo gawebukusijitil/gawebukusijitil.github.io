@@ -19,8 +19,9 @@
 
         <script>
             AOS.init({ duration: 1000, delay: 500 });
+            var myslider = document.getElementById('myslider');
             var slider = simpleslider.getSlider({
-                container: document.getElementById('myslider'),
+                container: myslider,
                 prop: 'opacity',
                 delay: 3,
                 init: -100,
