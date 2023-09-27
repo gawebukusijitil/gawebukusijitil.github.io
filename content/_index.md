@@ -9,8 +9,8 @@ masthead_section:
     cta: Buktikan kami
 
 quote_section:
-    quote: "Ga nyangka hasil sebagus ini ga bikin gue bokek! Terima kasih, Gawebukusijitil!"
-    quote_from: – Andi, Mahasiswa
+    quote: Apa kata mereka?
+    quote_from: Kalau kamu masih ragu, kami sangat memahami hal tersebut. Tapi orang-orang yang telah memberi kami kesempatan akan kembali untuk ke-sekian kalinya.
 
 product_section:
     promise: Mencetak satu eksemplar tidak pernah seterjangkau ini.

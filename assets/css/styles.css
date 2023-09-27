@@ -12038,8 +12038,13 @@ section {
   position: absolute;
   background-size: cover;
   pointer-events: auto;
-  border-radius: 1.3em;
+  border-radius: 15px;
   overflow: hidden;  
+}
+@media (min-width: 576px) {
+.device .screen {
+  border-radius: 20px;
+}
 }
 
 .device .button {

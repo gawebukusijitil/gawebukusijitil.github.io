@@ -1,13 +1,14 @@
 {{ $bg := resources.Get "img/portrait_black.png" }}
+{{ $testimonies := resources.Match "img/testi/*.jpg" }}
 <!-- Quote_section -->
 <aside class="bg-gradient-primary-to-secondary">
     <div class="container px-5">
         <div class="row gx-5 justify-content-center">
             <div class="col-12 col-lg-6" data-aos="fade-up">
-                <div class="h2 fs-1 text-white mb-4">
+                <div class="h1 display-1 text-white mb-4">
                     {{ .Params.quote_section.quote }}
                 </div>
-                <div class="h2 fs-1 text-white mb-4">
+                <div class="normal text-white mb-4">
                     {{ .Params.quote_section.quote_from }}
                 </div>
             </div>
@@ -49,7 +50,10 @@
                         data-color="black"
                         style="background-image: url('{{ $bg.Permalink }}');"
                         >
-                        <div class="screen bg-black">
+                        <div
+                            onmouseover="slider.pause()"
+                            onmouseout="slider.resume()"
+                            class="screen bg-black">
                             <div class="slide-wrapper">
                                 <div 
                                     onclick="slider.prev()"
@@ -70,10 +74,9 @@
                                     </svg>
                                 </div>
                                 <div class="slider" id="myslider">
-                                    <img src="http://placekitten.com/g/254/1024"/>
-                                    <img src="https://unsplash.it/256/1024"/>
-                                    <img src="https://unsplash.it/256/1024?random=1"/>
-                                    <img src="https://unsplash.it/256/1024?random=2"/>
+                                    {{ range $testimonies }}
+                                        <img src="{{ .Permalink }}"/>
+                                    {{ end }}
                                 </div>
                                 <div 
                                     onclick="slider.next()"
