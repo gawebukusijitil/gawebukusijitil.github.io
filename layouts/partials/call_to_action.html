@@ -1,7 +1,7 @@
 {{ $bg := resources.Get "img/books-3454392.webp" }}
 <!-- Call to action section-->
 <section
-    class="cta"
+    class="cta overflow-clip"
     id="cetak" 
     style="background-image: url('{{ $bg.Permalink }}');"
 >
@@ -12,7 +12,7 @@
             <br />
             {{ .Params.cta_section.line_2 }}
         </h2>
-        <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="{{ .Params.cta_section.cta_link }}" target="_blank">{{ .Params.cta_section.cta_text }}</a>
+        <a class="btn btn-success py-3 px-4 rounded-pill" href="{{ .Params.cta_section.cta_link }}" target="_blank">{{ .Params.cta_section.cta_text }}</a>
     </div>
 </div>
 </section>

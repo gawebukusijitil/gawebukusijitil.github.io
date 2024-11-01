@@ -1,3 +1,5 @@
+{{ $img := resources.Get "img/ok_by_machine.png" }}
+
 <!-- Product description section-->
 <section class="bg-light" id="about-us">
     <div class="container px-5">
@@ -7,7 +9,7 @@
                 <p class="lead fw-normal text-muted mb-5 mb-lg-0">{{ .Params.product_section.selling }}</p>
             </div>
             <div class="col-sm-8 col-md-6" data-aos="fade-in">
-                <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
+                <div class="px-5 px-sm-0"><img class="img-fluid" src="{{ $img.Permalink }}" style="mix-blend-mode: multiply;" alt="..." /></div>
             </div>
         </div>
     </div>
